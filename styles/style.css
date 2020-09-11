@@ -59,17 +59,47 @@ html {
     font-family:sans-serif;
 }
 .form-button {
-    padding:0.8rem 1.6rem;
+    /* padding:0.8rem 1.6rem;
     background: tomato;
     color:#fff;
     border:0;
     border-radius: 0.188rem;
     transition:0.4s all;
     cursor: pointer;
-    float: right;
+    float: right; */
+    --size: 0;
+    --left: 0;
+    --top: 0;
+
+    border: 0;
+    padding: 20px 70px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    background-color: tomato;
+}
+.form-button span{
+    position: relative;
+    z-index: 1;
 }
 .form-button:hover {
-    background: #ED2D2D;
+    --size: 400px;
+}
+.form-button::after{
+    content: "";
+    position: absolute;
+    left: var(--left);
+    top: var(--top);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, tomato 60%);
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    transition: 0.3s width, 0.3s height;
+    z-index: 0;
 }
 .list-cnt {
     background: #fff;
