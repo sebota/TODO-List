@@ -2,17 +2,57 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>FMA</title>
+    <title>TODO List</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
 </head>
-<body>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    Pozdr
-    <br/><br/><br/>
-    <img src="images/1.jpg" alt="FMA" title="FMA">
-    <br/><br/><br/>
-    <a href="https://pl.wikipedia.org/wiki/Fullmetal_Alchemist">Secret</a>
+<body onload="odliczanie();">
+    <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. -->
+    <!-- <br/><br/><br/> -->
+    <!-- <img src="images/1.jpg" alt="FMA" title="FMA"> -->
+    <!-- <br/><br/><br/> -->
+    <!-- <a href="https://pl.wikipedia.org/wiki/Fullmetal_Alchemist">Secret</a> -->
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/timer.js"></script>
+    <!-- <script src="scripts/hover.js"></script> -->
+
+    <div id="zegar" class="zegarcss"></div> 
+
+    <form class="form" id="todoForm">
+        <div class="form-row">
+            <label class="form-label" for="todoMessage">Podaj treść zadania</label>
+            <textarea class="form-message" name="todoMessage" id="todoMessage"></textarea>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="button form-button">Dodaj</button>
+        </div>
+    </form>
+
+    <section class="list-cnt">
+        <header class="list-header">
+            <h2 class="list-title">
+                Lista zadań
+            </h2>
+            <form class="list-search-form">
+                <input type="search" id="todoSearch" class="list-search">
+            </form>
+        </header>
+    
+        <div class="list" id="todoList">
+        </div>
+    </section>
+
+    <template id="elementTemplate">
+        <div class="element-bar">
+            <h3 class="element-date"></h3>
+            <button class="element-delete" title="Usuń task">
+                Usuń
+            </button>
+        </div>
+        <div class="element-text">
+        </div>
+    </template>
+
 </body>
 </html>

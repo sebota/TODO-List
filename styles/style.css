@@ -1,11 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: black;
-    color: white;
-    width: 600px;
+    color: rgb(0, 0, 0);
+    width: 800px;
     margin: 0 auto;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
     font-family: fantasy;
+    background-image: linear-gradient( 135deg, #000000 10%, #2a283b 100%);
+    min-height: 100vh;
+}
+
+.zegarcss{
+    font-family: fantasy;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 5px;
+    font-size: 35px;
 }
 
 img {
@@ -13,5 +27,111 @@ img {
     margin: 0 auto;
 }
 html {
-    background-color: #a13939;
+    background-color: #181515;
   }
+
+.cnt {
+    max-width:40rem;
+    margin:2rem auto;
+}
+.form {
+    font-family:sans-serif;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    padding:2rem;
+    background: #fff;
+    border-radius: 5px;
+}
+.form-row {
+    overflow:hidden;
+}
+.form-label {
+    display: block;
+    font-size:0.8rem;
+    margin-bottom:0.2rem;
+}
+.form-message {
+    padding:1rem;
+    height:10rem;
+    width:100%;
+    border:1px solid #aaa;
+    margin-bottom: 0.5rem;
+    resize: vertical;
+    font-family:sans-serif;
+}
+.form-button {
+    padding:0.8rem 1.6rem;
+    background: tomato;
+    color:#fff;
+    border:0;
+    border-radius: 0.188rem;
+    transition:0.4s all;
+    cursor: pointer;
+    float: right;
+}
+.form-button:hover {
+    background: #ED2D2D;
+}
+.list-cnt {
+    background: #fff;
+    font-family: sans-serif;
+    border-radius: 5px;
+    margin:1rem 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    padding: 2rem;
+}
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-search-form {
+    width: 50%;
+}
+.list-search {
+    border: 1px solid #aaa;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 3px;
+}
+.list-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.element {
+    border-top: 1px solid #ddd;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.element-bar {
+    overflow:hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+.element-date {
+    margin:0;
+}
+.element-date {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+.element-delete {
+    border:0;
+    background: url(../images/trash.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.element-text {
+    color:rgb(44, 34, 34);
+    font-size:0.8rem;
+}
