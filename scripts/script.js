@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //wstawiam tekst
         element.querySelector(".element-text").innerText = text;
+        element.querySelector(".element-delete").id = text;
 
         //i wrzucam element do listy
         todoList.append(element);

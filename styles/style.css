@@ -59,14 +59,6 @@ html {
     font-family:sans-serif;
 }
 .form-button {
-    /* padding:0.8rem 1.6rem;
-    background: tomato;
-    color:#fff;
-    border:0;
-    border-radius: 0.188rem;
-    transition:0.4s all;
-    cursor: pointer;
-    float: right; */
     --size: 0;
     --left: 0;
     --top: 0;
@@ -76,7 +68,7 @@ html {
     border-radius: 50px;
     text-transform: uppercase;
     font-family: sans-serif;
-    color: #fff;
+    color: rgb(0, 0, 0);
     overflow: hidden;
     position: relative;
     background-color: rgb(41, 37, 37);
