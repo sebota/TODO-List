@@ -1,11 +1,11 @@
-var tab = [];
-var tab_date = [];
-
 document.addEventListener("DOMContentLoaded", () => {
     //pobieram elementy
     const form = document.querySelector("#todoForm");
     const textarea = document.querySelector("#todoMessage");
     const button = document.querySelector("#sub");
+
+    var tab = [];
+    var tab_date = [];
 
     button.disabled = true;
     
